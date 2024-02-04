@@ -1,0 +1,45 @@
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto; /* Let the browser determine the width based on the content */
+    padding: 0 10px;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .next-button {
+    bottom: 120px;
+    /* right: 30px; */
+  }
+  
+  .prev-button {
+    left: 0;
+    bottom: 120px;
+  }
+  
